@@ -13,7 +13,7 @@ export function createAboutSection(onSelectPoem) {
   const section = document.createElement('section');
   section.className = 'section hero-about-section';
   section.id = 'about';
-  
+
   section.innerHTML = `
     <!-- Top Hero Banner with Background Video Atmosphere -->
     <div class="hero-backdrop-container">
@@ -52,45 +52,43 @@ export function createAboutSection(onSelectPoem) {
               <h2 class="manifesto-heading">why i write</h2>
               <div class="manifesto-body">
                 <p>
-                  poems are my escape. i write mostly to express the thoughts that stay unspoken — the feelings i don't always know how to say, the moments that linger, and the things that feel easier to put into words than to say aloud.
+                  i write because some feelings are too quiet for conversation, yet too loud to keep inside. poetry is where i let them breathe; turning fleeting thoughts, untold stories, and little pieces of myself into words. it is my way of making sense of what i feel, holding on to what i cannot explain, and finding beauty in the things that often go unsaid.
                 </p>
-                <p class="manifesto-closing">
-                  writing gives those thoughts somewhere to exist.
-                </p>
+              
               </div>
             </div>
 
-            <!-- Featured Editorial Card /01 (Spring Collection / Blue Hour Interlude) -->
-            <div class="mosaic-card card-spring" id="heroFeaturedCard01" role="button" tabindex="0" aria-label="Read featured poem: blue hour interlude">
+            <!-- Featured Editorial Card /30 (The Mystical Moon) -->
+            <div class="mosaic-card card-spring" id="heroFeaturedCard01" role="button" tabindex="0" aria-label="Read featured poem: the mystical moon">
               <div class="mosaic-card-inner">
                 <img 
-                  src="/images/botanical_vase_01.jpg" 
-                  alt="Spring collection - dark roses in ceramic vase" 
+                  src="/images/poem_pics/poem_pic_30.jpg" 
+                  alt="The Mystical Moon - editorial photograph" 
                   class="mosaic-card-image"
                   loading="lazy"
                 />
-                <div class="mosaic-card-num">/01</div>
+                <div class="mosaic-card-num">/30</div>
                 <div class="mosaic-card-caption">
-                  <span class="caption-title">spring collection</span>
+                  <span class="caption-title">the mystical moon</span>
                   <span class="caption-line"></span>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- Right Column: Staggered Card /08 (Autumn Collection / Rain Against The Pane) -->
+          <!-- Right Column: Staggered Card /29 (The Greatest Love Story) -->
           <div class="mosaic-col mosaic-right">
-            <div class="mosaic-card card-autumn" id="heroFeaturedCard02" role="button" tabindex="0" aria-label="Read featured poem: rain against the pane">
+            <div class="mosaic-card card-autumn" id="heroFeaturedCard02" role="button" tabindex="0" aria-label="Read featured poem: the greatest love story">
               <div class="mosaic-card-inner">
                 <img 
-                  src="/images/botanical_twigs_02.jpg" 
-                  alt="Autumn collection - magnolia branches in dark vase" 
+                  src="/images/poem_pics/poem_pic_29.jpg" 
+                  alt="The Greatest Love Story - editorial photograph" 
                   class="mosaic-card-image"
                   loading="lazy"
                 />
-                <div class="mosaic-card-num">/08</div>
+                <div class="mosaic-card-num">/29</div>
                 <div class="mosaic-card-caption">
-                  <span class="caption-title">autumn collection</span>
+                  <span class="caption-title">the greatest love story</span>
                   <span class="caption-line"></span>
                 </div>
               </div>
@@ -118,8 +116,8 @@ export function createAboutSection(onSelectPoem) {
     });
   }
 
-  bindCardAction(card01, 'blue-hour-interlude');
-  bindCardAction(card02, 'rain-against-the-pane');
+  bindCardAction(card01, 'the-mystical-moon');
+  bindCardAction(card02, 'the-greatest-love-story');
 
   // Programmatically trigger autoplay for background video
   const videoEl = section.querySelector('.hero-video-bg');
@@ -129,7 +127,7 @@ export function createAboutSection(onSelectPoem) {
     if (playPromise !== undefined) {
       playPromise.catch(() => {
         // Retry when user interacts or when video data loads
-        videoEl.addEventListener('loadeddata', () => videoEl.play().catch(() => {}), { once: true });
+        videoEl.addEventListener('loadeddata', () => videoEl.play().catch(() => { }), { once: true });
       });
     }
   }

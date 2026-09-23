@@ -7,6 +7,7 @@ import { createAboutSection } from './components/AboutSection.js';
 import { createPoemGrid } from './components/PoemGrid.js';
 import { createPoemPage } from './components/PoemPage.js';
 import { createPublicationsGrid } from './components/PublicationsGrid.js';
+import { createPublicationModal } from './components/PublicationModal.js';
 import { createContactSection } from './components/ContactSection.js';
 import { createFooter } from './components/Footer.js';
 
@@ -34,7 +35,13 @@ async function initApp() {
     openPoemReader(poem.id);
   });
 
-  const publicationsSection = createPublicationsGrid(PUBLICATIONS_DATA);
+  // Dedicated Publication Viewer Modal
+  const publicationModalComp = createPublicationModal();
+
+  const publicationsSection = createPublicationsGrid(PUBLICATIONS_DATA, (pub) => {
+    publicationModalComp.open(pub, PUBLICATIONS_DATA);
+  });
+
   const contactSection = createContactSection();
   const footerComp = createFooter();
 
@@ -80,6 +87,7 @@ async function initApp() {
   appRoot.appendChild(navbarComp.element);
   appRoot.appendChild(mainSectionsWrapper);
   appRoot.appendChild(poemPageComp.element);
+  appRoot.appendChild(publicationModalComp.element);
   appRoot.appendChild(footerComp);
 
   // Store last scroll position before opening reader
@@ -130,6 +138,12 @@ async function initApp() {
     if (hash.startsWith('poem/')) {
       const poemId = hash.replace('poem/', '');
       openPoemReader(poemId, false);
+    } else if (hash.startsWith('publication/')) {
+      const pubId = hash.replace('publication/', '');
+      const pub = PUBLICATIONS_DATA.find(p => p.id === pubId);
+      if (pub) {
+        publicationModalComp.open(pub, PUBLICATIONS_DATA);
+      }
     } else {
       if (poemPageComp.element.classList.contains('active')) {
         closePoemReader(false);

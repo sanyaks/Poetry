@@ -1,180 +1,434 @@
 /**
  * ============================================================================
- * SANYA'S POETRY ARCHIVE - DATA STORE
+ * SANYA'S POETRY ARCHIVE - COMPLETE DATA STORE (35 POEMS)
  * ============================================================================
- * You can add, edit, or reorder your poems here at any time.
- * Formatting note:
+ * Sanya's complete poetry collection extracted from desktop archive.
+ * Formatting notes:
  * - Line breaks and stanza spaces are strictly preserved.
- * - Each poem has a title, short excerpt, date/year, cover image, mood tag, and content.
- * - The `~sanya` signature is automatically rendered at the end of every poem.
+ * - Each poem has a title, short excerpt, date, cover image, mood tag, and content.
+ * - The ~sanya ks signature is automatically rendered in the dedicated reader view.
  * ============================================================================
  */
 
 export const INITIAL_POEMS = [
   {
-    id: "blue-hour-interlude",
-    number: "01",
-    collection: "night collection",
-    title: "blue hour interlude",
-    date: "november 2025",
-    tag: "solitude",
-    readingTime: "1 min read",
-    excerpt: "the sky forgets its afternoon weight, turning the color of wet slate...",
-    coverImage: "/images/botanical_vase_01.jpg",
-    content: `the sky forgets its afternoon weight,
-turning the color of wet slate
-and unspoken things.
-
-i watch the streetlight hum outside the window,
-a lone filament vibrating
-against the cold.
-
-there is a strange mercy in the dark:
-it asks nothing of you,
-not your name,
-nor the promises you could not keep.
-
-only this:
-that you breathe in
-what the day left behind.`
+    "id": "so-close-yet-so-far",
+    "number": "01",
+    "collection": "love & longing",
+    "title": "so close yet so far",
+    "date": "2025",
+    "tag": "longing",
+    "readingTime": "1 min read",
+    "excerpt": "so close yet so far, something i felt so often with us...",
+    "coverImage": "/images/poem_pics/poem_pic_01.jpg",
+    "content": "⭐️🦦\n\nso close yet so far,\nsomething i felt so often with us.\nin the darkest nights; my only star,\na smile i’d give, without a fuss.\nin a crowded room my eyes saw you,\nyour smell that traced back to me.\nin every place; my best view,\nif only all this you could see."
   },
   {
-    id: "rain-against-the-pane",
-    number: "02",
-    collection: "autumn collection",
-    title: "rain against the pane",
-    date: "january 2026",
-    tag: "rain & silence",
-    readingTime: "1 min read",
-    excerpt: "some sounds don't ask to be deciphered, they only ask to be heard...",
-    coverImage: "/images/botanical_twigs_02.jpg",
-    content: `some sounds don't ask to be deciphered,
-they only ask to be heard.
-
-a drop hesitates on the glass,
-trembling at the edge of gravity
-before choosing
-to fall into another.
-
-i wonder how many conversations
-are just two people
-waiting for the other to gather courage.
-
-the water pools along the sill.
-the room stays dark.
-the night continues without our permission.`
+    "id": "a-day-without-phones",
+    "number": "02",
+    "collection": "reflections & shadows",
+    "title": "a day without phones",
+    "date": "2025",
+    "tag": "reflections",
+    "readingTime": "2 min read",
+    "excerpt": "one morning, i woke up to see no phone beside me, i thought, \"how will i complete my...",
+    "coverImage": "/images/poem_pics/poem_pic_02.jpg",
+    "content": "One morning, I woke up to see no phone beside me\nI thought, \"How will I complete my snapchat streaks\"\nMy sister said \"Let it be,\nBecause I've not yet checked Ronaldo's tweet\"\n\nWe both shreaked on top of our voices\nOur mother came and said to us\n\"Finally the world has made better choices,\nBy taking away the only fuss!\"\n\nWe both were in complete dismay\nThought if this world confiscated our phones\nHow worse could be this day\nAnd then we saw our WIFI zone\n\nMother said make best use of this\nWhich you won't get in a hundred years\nThe beautiful scenery we all had missed\nWhich brought some peace and took away fears\n\nA petty request to see the vast world\nBehind those lighted small screens\nWill assure you a so much better life\nUs and phones that lies between"
   },
   {
-    id: "unspoken-margins",
-    number: "03",
-    collection: "margins folio",
-    title: "unspoken margins",
-    date: "august 2025",
-    tag: "ink & memory",
-    readingTime: "1 min read",
-    excerpt: "we write in the margins because the center was never meant for honesty...",
-    coverImage: "/images/botanical_peony_03.jpg",
-    content: `we write in the margins
-because the center was never meant for honesty.
-
-the text marches on in straight, disciplined lines,
-black ink on sterile white,
-stating what is required,
-what has been proved,
-what can be graded.
-
-and yet,
-in the faint pencil scribbles along the side,
-there is the real record:
-
-the hour the rain began,
-the name i could not say in daylight,
-and the quiet certainty
-that we are all softer
-than the world allows us to be.`
+    "id": "cherries",
+    "number": "03",
+    "collection": "heartbreak & memory",
+    "title": "cherries",
+    "date": "2025",
+    "tag": "heartbreak",
+    "readingTime": "2 min read",
+    "excerpt": "i sat on my couch, trying to hold my breath,...",
+    "coverImage": "/images/poem_pics/poem_pic_03.jpg",
+    "content": "I sat on my couch,\ntrying to hold my breath,\nthe words that came out of you,\nfor which none could vouch,\n“It was a mistake hun”, was all you said.\nThe call which lasted for fifteen minutes,\nfifteen minutes which wrecked the love,\nthe love that my heart held for you,\nheld for more than fifteen thousand hours,\nhours spent building little pieces of us.\nIt was nothing like I imagined it’d end,\nmaybe my hopes for us exceeded the skylines,\nmaybe I hadn’t looked close enough,\nclose enough to see how torn apart we were.\n\nThe night we met after you quivered my very being,\nyour brown eyes I looked into which showcased no remorse,\nnor deplore,\nthe lazy gaze you had, so subtle,\nlike you hadn’t just destroyed my garden, our garden,\nthe garden we took years to create.\n\nPerhaps, our names weren’t carved deep enough,\ndeep enough in the cherry trees,\nof our garden,\nwhich blossomed a new sour cherry,\nevery time you’d say you were mine.\nAnd now, you’ve crushed those cherries to the ground,\nfor the tree to fall beneath the land,\nthe land which was built just for us."
   },
   {
-    id: "3am-and-the-empty-avenue",
-    number: "04",
-    collection: "nocturne sequence",
-    title: "3am and the empty avenue",
-    date: "february 2026",
-    tag: "late night",
-    readingTime: "1 min read",
-    excerpt: "traffic lights blink yellow into empty crosswalks, rhythmic and unwatched...",
-    coverImage: "/images/botanical_rose_04.jpg",
-    content: `traffic lights blink yellow into empty crosswalks,
-rhythmic and unwatched.
-
-the city is breathing in its sleep,
-and all its sharp corners
-have dissolved into mist.
-
-at three in the morning,
-no one is pretending.
-no one is holding their shoulders back
-or wearing their armor.
-
-you can walk down the center of the asphalt
-and believe, if only for ten steps,
-that the universe is holding its breath
-just to let you pass.`
+    "id": "constellations",
+    "number": "04",
+    "collection": "celestial & night",
+    "title": "constellations",
+    "date": "2025",
+    "tag": "stars & love",
+    "readingTime": "2 min read",
+    "excerpt": "we have a world that’s just ours, you and i, your smile and mine...",
+    "coverImage": "/images/poem_pics/poem_pic_04.jpg",
+    "content": "we have a world that’s just ours,\nyou and i, your smile and mine.\nwe have a world that’s just ours,\nmy galaxy, filled with your stars.\nthe kneading pain in me that you seized,\npicked me up,\nbandaged my broken pieces,\nand stitched my open wounds.\nask for my heart someday,\ninstead of my beauty,\nand watch me melt away in a moment.\nlike hurricane gloria you surrounded me,\nyour words that plunge through my inner core,\nmake my eyes so sore,\noh how could i forget you so easily?\nin your eyes i find my whole universe,\nevery asteroid, constellation and comet,\nfloating harmoniously where they belong.\nit’s like all i see in your gaze,\nis my reflection, perfected and mended.\nperhaps we aren’t meant to be,\nbut how do i stop my every inch,\nfrom wanting every inch of you?"
   },
   {
-    id: "tide-lines",
-    number: "05",
-    collection: "shoreline folio",
-    title: "tide lines",
-    date: "may 2025",
-    tag: "the shore",
-    readingTime: "1 min read",
-    excerpt: "the shoreline remembers every wave, but holds onto none of them...",
-    coverImage: "/images/dark_ocean.jpg",
-    content: `the shoreline remembers every wave,
-but holds onto none of them.
-
-it accepts the cold salt,
-the foam that sparkles and dies in seconds,
-the driftwood pulled from a distant coast.
-
-and then it lets it go.
-
-i think of how hard i hold
-every sentence ever spoken to me in the dark.
-how i keep every glance like a stone
-weighing down my pockets.
-
-perhaps peace is not an arrival,
-but the tide
-learning how to withdraw
-without feeling empty.`
+    "id": "judas-kiss",
+    "number": "05",
+    "collection": "heartbreak & memory",
+    "title": "judas' kiss",
+    "date": "2025",
+    "tag": "betrayal",
+    "readingTime": "1 min read",
+    "excerpt": "did she give you shivers down your spine?, was her touch more intoxicating than mine?...",
+    "coverImage": "/images/poem_pics/poem_pic_05.jpg",
+    "content": "Did she give you shivers down your spine?\nWas her touch more intoxicating than mine?\nDid her eyes fall upon you with more desire?\nWere her hands something that you’d admire?\n\nThe kiss you planted on her lips,\nSo forbidden, it broke us apart.\nThe caresses you led down her thighs,\nSo illicit, it crumbled us down."
   },
   {
-    id: "dried-lavender-and-shadows",
-    number: "06",
-    collection: "quiet archives",
-    title: "dried lavender & shadows",
-    date: "december 2025",
-    tag: "quiet archives",
-    readingTime: "1 min read",
-    excerpt: "fragile things outlast the hands that picked them...",
-    coverImage: "/images/wildflowers_dusk.jpg",
-    content: `fragile things outlast the hands
-that picked them.
-
-taped to the charcoal wall,
-the stem hangs upside down,
-retaining its scent
-long after the summer forgot its name.
-
-we are shaped by what we refuse to discard:
-the ticket stub from the night it poured,
-the book with the folded corner on page sixty-four,
-the silence after goodnight.
-
-time takes the color first,
-then the moisture,
-leaving behind only the silhouette
-and the ache.`
+    "id": "broken",
+    "number": "06",
+    "collection": "heartbreak & memory",
+    "title": "broken",
+    "date": "2025",
+    "tag": "sorrow",
+    "readingTime": "2 min read",
+    "excerpt": "the hallowed moon, the celestial stars,...",
+    "coverImage": "/images/poem_pics/poem_pic_06.jpg",
+    "content": "The hallowed moon, \nThe celestial stars, \nA gloomy sky,\nNo sparrows, no scavengers,\nNot a single being with breath, strolling. \nStrolling in the night sky that we cherish, \nCherish when we’re disconsolate, \nCherish when we’re in love, \nCherish when we’ve been forsaken, \nCherish when we’re broken into pieces, \nPieces that cannot be placed together. \n\nThe wretched, \nThe crestfallen, \nFilled with gloom and tears, \nTears which were shed for people \nPeople who weren’t worthy of it. \nTears which flowed out of their bloodshot eyes, \nEyes weary, eyes blurry, wrapped by dark circles. \nDark circles from endless sleepless nights, \nWhen all they could think about was the moments,\nMoments filled with joy, cheerful with a beaming smile. \n\nEyes captivating, eyes enlightening, \nThat when you’d look at it close enough, \n It’d pull you into an abyss, \nThe caramel chasm is what you’d call it. \nThe hazel eyes which you’d call home. \nAnd whenever you made contact with it, \nIt’d feel like you’re Alice in Wonderland, \nLost yet not petrified. \n\nNow, those charitable smiles,\nAnd caramel eyes,\nHave turned into voids, \nVoids which look empty, hopeless and unbothered, \nNot cause of their actions, \nNot cause of their feelings, \nBut because of what people did, \nWho broke them into pieces, \nWho weren’t worthy of the irreplaceable tears."
+  },
+  {
+    "id": "i-want-you-to-be-happier",
+    "number": "07",
+    "collection": "love & longing",
+    "title": "i want you to be happier",
+    "date": "2025",
+    "tag": "letting go",
+    "readingTime": "2 min read",
+    "excerpt": "awkward silence swept across the room, until one chose to speak up finally...",
+    "coverImage": "/images/poem_pics/poem_pic_07.jpg",
+    "content": "Awkward silence swept across the room, \nUntil one chose to speak up finally. \nThey were outlanders, is what we’d all assume, \nBut for them, the tranquillity in the chamber was heavenly. \n\nThe lad and lass seated there, \nBeen through a whole lot of counselling and therapy. \nBoth having arguments which was equally fair, \nRefusing to come to a solidarity. \n\nWith memories and miseries shown in their eyes, \nThe weary eyes and a picturesque smile. \nA smile, that could easily hide the despise, \nDuring the wait in the foyer for a while. \n\nThey wanted to prattle like they did before, \nThe conversations never-ending leading to sleepless nights. \nA bond that was lost they tried to restore,\nUnder the tender twilight.  \n\nInseparable they were, but now strangers, \nTheir eyes which spoke a million words to each other. \nNot wanting to sign the indenture, \nTheir hearts which started to flutter. \n\nAs I said, soulmates they were, \nBut now strangers with gazillion unsaid words.\nTheir very last conversation was when he said to her, \n“I want you to be happier”."
+  },
+  {
+    "id": "love-sonnet-xi",
+    "number": "08",
+    "collection": "love & longing",
+    "title": "love sonnet xi",
+    "date": "2025",
+    "tag": "devotion",
+    "readingTime": "2 min read",
+    "excerpt": "guess i never knew i’d fall for you so deeply, so deep, that i sob at the thought of...",
+    "coverImage": "/images/poem_pics/poem_pic_08.jpg",
+    "content": "Guess I never knew I’d fall for you so deeply, \nSo deep, that I sob at the thought of you fading.\nThe kneading pain in my heart when you aren’t next to me, \nThe pain that soothes completely by the sight of you. \nFrom dusk to dawn I crave your caresses against my sore skin, \nI crave for your dark brown eyes to fall upon me now and then, \nI crave for nothing, but you. \n\nYou are the angel on my shoulder when all I want to do is sin.\nI want your warm fingers to be threaded in my cold ones, \nYour reassuring hugs to lighten up my darkest days, \nYour heavenly lips to plant kisses on my forehead,\nThe sovereign nose, on your arrogant face.\nYou are now the bane of my existence, the object of all my desires. \nAnd I so very burn for you. \n"
+  },
+  {
+    "id": "nee-kavithaigala",
+    "number": "09",
+    "collection": "love & longing",
+    "title": "nee kavithaigala",
+    "date": "2025",
+    "tag": "warmth",
+    "readingTime": "1 min read",
+    "excerpt": "your arms around my waist, the sun reflecting off our faces,...",
+    "coverImage": "/images/poem_pics/poem_pic_09.jpg",
+    "content": "Your arms around my waist, \nThe sun reflecting off our faces, \nMaking all that is within us glow.\n\nYour fingers in my tangled hair,\nParting them from my forehead, \nGiving me shivers down my spine.\n\nYour smile settled in my heart, \nTaking us to our euphoria, \nThe only place where you and I were meant to be."
+  },
+  {
+    "id": "a-scar-in-his-heart",
+    "number": "10",
+    "collection": "reflections & shadows",
+    "title": "a scar in his heart",
+    "date": "2025",
+    "tag": "wounds",
+    "readingTime": "2 min read",
+    "excerpt": "a machete in his hand, a room filled with fear,...",
+    "coverImage": "/images/poem_pics/poem_pic_10.jpg",
+    "content": "A machete in his hand, \nA room filled with fear, \nHis eyes so ferocious yet tired, \nConstantly thinking, who he was to interfere? \n\nBut there laid the girl,\nTeardrops flowing down her cheeks.\nWondering if he would help her, \nPushing away the English antiques. \n\nHe stood there helpless, \nFor glory’s sake or the girl’s, \nHe stepped forward and gave her a hand, \nStroking away her brunette curls.\n\nWhile she sat there on the sofa, \nHe went out hunting for the man, \nThe same fierce eyes filled with revenge,\nStepped out of the house without a concrete plan.\n\nHis veins popping out, \nAt the sight of the heedless sobered up bloke\nHeld his knife tight and walked a little further, \nStabbed right through his chest and didn’t bother to look back. \n\nAt home, there laid the girl no more, \nWhimpering hopelessly, \nWith not a friend to console,\nAfter that man finished her off so recklessly, \nWith the unkind machete."
+  },
+  {
+    "id": "an-irreplaceable-soul",
+    "number": "11",
+    "collection": "love & longing",
+    "title": "an irreplaceable soul",
+    "date": "2025",
+    "tag": "memory",
+    "readingTime": "3 min read",
+    "excerpt": "every time i’d say that i’m coming to visit him, i’d hear his elation on the call...",
+    "coverImage": "/images/poem_pics/poem_pic_11.jpg",
+    "content": "every time i’d say that i’m coming to visit him, \ni’d hear his elation on the call. \nthat joyous giggle and that beaming smile which no one could afford to put on, that made me content.\nfrom sneaking around to get candies and fighting like tom and jerry for the bigger slice of cake, we’d do everything together, a bond that no one could break. \noutta all the places to sleep, he would choose mine and grapple with me for it until we both end up wailing and falling asleep on our mother’s lap.\nhis heart, so pure and faultless, would console me when i’m sad and cuff me on the head when i’m way too glad.\nhe wreaked the wall that no one could break and mended my broken pieces. sticking them piece by piece and putting me to an ease.\neven if he didn’t say a word, i’d know what he was going through. from the strain in his voice when we’d not understand what he was trying to explain to the cries that would simply push us all away.\nwhenever i’d ask him if he was okay, all he would say is yes and move away. he would never show his feelings and emotions that he had locked inside of him, down and deep.\nthat winsome smile he puts on, hides his fear and makes disappear all our tears. those small cookies that he’d get for me would easily make my day.\ni’d yearn to spend more time with him, before i had to go. go away and never come back for another year. we’d cry and wail but at the end of the day we were always forced to move away.\nyet, i know that he has all of me and i have his, which would still bring us back together in all the springs."
+  },
+  {
+    "id": "disillusionment",
+    "number": "12",
+    "collection": "heartbreak & memory",
+    "title": "disillusionment",
+    "date": "2025",
+    "tag": "reality",
+    "readingTime": "2 min read",
+    "excerpt": "she walked past him in the hallway, all those lovely memories crossed his mind...",
+    "coverImage": "/images/poem_pics/poem_pic_12.jpg",
+    "content": "she walked past him in the hallway \nall those lovely memories crossed his mind\nbut all he could do was head to the doorway\nhiding his glum emotions behind \n\nshe meant so much to him \nbut how forlorn he was\ngazed at those old polaroids with grim\nconstantly thinking he was the only cause \n\nhow a month ago they were meant to be\nthough, abruptly everything fell apart \nmortals did nothing but disagree \nfurther breaking his heart \n\nspent so much time and energy on her\nbut who knew she’d cause sheer disappointment? \nleaving him, disheartened and stranded \nfurthermore, scattering his excitement \n\nafter a week, still unaffected she didn’t bother to ask \nhis state and sentiment \noh, how disappointed he was \nyet hushed himself for their betterment \n\nhe still glares at those images in his phone\nlonging to prattle with her at 3am \nbut she has now evidently outgrown \nas we all know, at the end of the day, love is a scam"
+  },
+  {
+    "id": "drowning",
+    "number": "13",
+    "collection": "reflections & shadows",
+    "title": "drowning",
+    "date": "2025",
+    "tag": "isolation",
+    "readingTime": "2 min read",
+    "excerpt": "she isolated herself, pushing all her folks away...",
+    "coverImage": "/images/poem_pics/poem_pic_13.jpg",
+    "content": "she isolated herself\npushing all her folks away\nspent her time with that lil elf\nhoping, one day, she’d runaway \n\nmigraines and stomach aches\nweren’t the only things bothering her \nall she wanted was a huge break\nfrom the feeling of being held by a fetter \n\nshe was drowning with tensity and coercion\nthe expectations withheld her from being cheerful\ninto everything, she put so much exertion\nyet eventually nothing seemed blissful\n\nshe never wanted to be a part of family time \nalways locked herself inside her chamber\nwith that tiny friend of hers and few tranquil chimes \nwhich brought her some peace and took away fears\n\none thing, she kept saying to herself \n‘this torment will come to an end’\nwhere she would give her sufferings a farewell\nbut for now, she had a lot to contend \n\nwherefore, if you’re drowning \nand have no air to breathe\njust know, it’ll all come to an end \nand your life will be as delightful as a wreath"
+  },
+  {
+    "id": "her-dimmed-gleeful-self",
+    "number": "14",
+    "collection": "reflections & shadows",
+    "title": "her dimmed, gleeful self",
+    "date": "2025",
+    "tag": "shadows",
+    "readingTime": "2 min read",
+    "excerpt": "(my shadow), the gloom figure that walks with me,...",
+    "coverImage": "/images/poem_pics/poem_pic_14.jpg",
+    "content": "(My shadow) \n\nThe gloom figure that walks with me, \nDay or night, doesn’t leave my side. \nMakes me look the prettiest indeed, \nStays calm even during the tide. \n\nMy hair which always looks like a mess, \nShe portrays it like tousled waves. \nIs never felicitous, more or less. \nAnd is often confused as a knave.\n\nDuring the darkest dusk when I had no one, \nNot a friend to lend me their shoulder.\nShe had a warm smile for once, \nAnd enfolded me in her arms when I grew a little colder.\n\nI tend to believe she has a life of her own, \nWith conundrums and tears, just like mine. \nInside the black void she lives all alone, \nWith only her thoughts and the sparkling wine.\n\nMost of the time, she’s sad and silent, \nWith music and poetry as a sideline. \nHer beautiful smile, the gleam in her eyes, \nWhich can’t be expressed, it’s that divine. \n\nThey’d like to be her friend but her awkward self, \nBeen hurt a couple times and even scraped. \nHence she chooses to hang out with that little elf, \nWith a stranger things poster, to the wall that’s taped. \n\nI see myself in her sometimes, \nHer dimmed, gleeful self. \nKinda funny that most of her hobbies are mine,\nOh, and when she’s merry, so am I."
+  },
+  {
+    "id": "i-love-you-i-hate-you",
+    "number": "15",
+    "collection": "heartbreak & memory",
+    "title": "i love you; i hate you",
+    "date": "2025",
+    "tag": "conflict",
+    "readingTime": "2 min read",
+    "excerpt": "two contrasting phrases, the first one makes you blush...",
+    "coverImage": "/images/poem_pics/poem_pic_15.jpg",
+    "content": "two contrasting phrases \nthe first one makes you blush \nwhilst the second one angers you\n\nif he said he loved her \nshe would redden and shed happy tears \nbut if he said he hated her \nshe would sob and redden herself \n\nlove and hate,\nboth break your heart and shatter you into pieces\nyou love someone and they betray you\nand if someone hates you, \nthey’ve already shattered you\n\nthere, love and hate don’t seem contrasting\nhowever, love is alluring \nit’s a beautiful phase of life \nin the end, sometimes, it’s all worth it \n\nexcept hate is cruel \nno part of it makes you plead \nno part of it makes you glee \nno part of it makes you glow \nit’s pure melancholy and doleful \n\nperhaps one may say, \n‘why give thee cheery and seize, \nlet hine be gloomy forever or jovial’\n‘though i say, instead of the brutality in thy heart \nthou fall in love and be crushed’\n\nwherefore, hate no one \ntis’ not going to make thou merry \nnor make others crimson"
+  },
+  {
+    "id": "i-see-him",
+    "number": "16",
+    "collection": "love & longing",
+    "title": "i see him",
+    "date": "2025",
+    "tag": "gaze",
+    "readingTime": "2 min read",
+    "excerpt": "i see him everyday in his gallery, i see him redden,...",
+    "coverImage": "/images/poem_pics/poem_pic_16.jpg",
+    "content": "I see him everyday in his gallery \nI see him redden, \nI see him twinkle, \nAnd I see him weep \n\nI see his brew of emotions \nThe way he glances at his phone \nI see him anticipate when his mobile rings \nWhen she pings him \nI see his cheeks turn crimson \n\nI see the desire in his eyes \nIn his caramel eyes \nHow he sobs when he misses her \nAnd frets when he realizes, he can’t have her\n\nI see the way the ardor fades away \nThe passion she had before is no more \nI see him agonize \nI see him wait for her calls \nI see him wait for her messages \n\nThe glimmer of hope that she’ll initiate the convo\nThe credence he had is no more \nWhining he drinks the plonk \nI see him have a breakdown \nI see him greatly miss her gravelly voice \n\nThe thought of losing her forever \nMakes him whimper \nHe yens to hear her booming voice \nFrom dusk to dawn he tries to neglect her \nYet he recalls their reminiscence \n\nThe torment he goes through \nHe gazes at the moon \nWith the longing to prattle again \nTo blather with her at 3 am \nI see him everyday in his gallery  \nYearning and whimpering for their endearment"
+  },
+  {
+    "id": "lake-of-shining-waters",
+    "number": "17",
+    "collection": "celestial & night",
+    "title": "lake of shining waters",
+    "date": "2025",
+    "tag": "sanctuary",
+    "readingTime": "3 min read",
+    "excerpt": "i stand there staring at the lake of shining waters, the one place that gives me comfort,...",
+    "coverImage": "/images/poem_pics/poem_pic_17.jpg",
+    "content": "I stand there staring at the lake of shining waters, \nThe one place that gives me comfort, \nGives me love, \nAnd soothe my aching heart. \nAs the water hits the rocks every now and then, \nIt feels as though my heart beats hard against my chest. \nAs the breeze sways the waves along, \nIt feels as though my stomach has snakes crawling inside of it. \nAs I see the city lights, so far away from the lake, \nIt feels as though I’m amidst the lake, \nCovered in darkness, \nAnd the light out of my reach. \n\nThe one place that gave me comfort, \nGave me love, \nAnd soothed my aching heart. \nNo longer wrapped me up in the blanket, \nThe blanket of warmth and safety.\nNow that I look at my utopia, \nIt feels like I’m staring at the reflection of myself, \nThe reflection I didn’t appreciate seeing.\nIt feels like I’m staring at all the things I did wrong, \nThe things I did wrong which caused the darkness to spread.\nIt feels like I’m staring at my failures, \nMy failures which weighed me down. \n\nYet I stop to think,\nThink how the lake hasn’t given up, \nGiven up after all its misery and still continuous to shine. \nHow it doesn’t let its pain affect the fishes, \nThe fishes which still swim through its bruised waters. \nI see how it still glows under the moon, \nThe moon which looks prettier than ever seen with the lake. \nI see how it doesn’t complain even with plastic, \nPlastic which doesn’t let it breath. \nI see how it isn’t weighed down by its agony, \nI see how it still manages to shine and flow. \nIt might not be my euphoria, \nYet it’s turned into my reflection, \nThe reflection which kept me going."
+  },
+  {
+    "id": "maybe",
+    "number": "18",
+    "collection": "heartbreak & memory",
+    "title": "maybe?",
+    "date": "2025",
+    "tag": "hesitation",
+    "readingTime": "1 min read",
+    "excerpt": "i hold a heavy heart, that’s been stale for a while,...",
+    "coverImage": "/images/poem_pics/poem_pic_18.jpg",
+    "content": "i hold a heavy heart\nthat’s been stale for a while,\nyour unending kindness has always tried to be a part,\nbut i push you away a couple miles.\nand finally when your love turns to hate,\ni gaze at you with teary eyes, a soft smile,\nknowing this has always been my fate."
+  },
+  {
+    "id": "melancholy",
+    "number": "19",
+    "collection": "reflections & shadows",
+    "title": "melancholy",
+    "date": "2025",
+    "tag": "melancholy",
+    "readingTime": "2 min read",
+    "excerpt": "dancing up and down i used to run, but when it came i was crushed apart...",
+    "coverImage": "/images/poem_pics/poem_pic_19.jpg",
+    "content": "Dancing up and down I used to run \nBut when it came I was crushed apart\nLooking up at the yellow, bright sun\nI think it was not yours but my part \n\nYou came in and spoiled everything \nMy life was no longer merry \nThe only thing I can do is sit and sing \nUnconsciously waiting for the calming fairy \n\nI wish she comes and casts a spell\nOn a crying black stone like heart \nI wish my life was as full as a well \nWith goods of happiness filled in a cart\n\nNow, I stare at the mirror and tell to myself\nI don't deserve this life!\nI mustn't live nor should I dwell\nSo now I decided to use my knife\n\nBut then she came and said to me \n'Can't you achieve without making a mark'\nShe said, 'I do agree!'\nBut still, please come out of the dark \n\nSo now, all the lads and lasses out there \nPlease don't decide before thinking twice \nYou have a planned beginning and end\nSo kindly be a little more wise"
+  },
+  {
+    "id": "mi-amor",
+    "number": "20",
+    "collection": "love & longing",
+    "title": "mi amor",
+    "date": "2025",
+    "tag": "passion",
+    "readingTime": "1 min read",
+    "excerpt": "sometimes i envy your face, the smile it gets to hold everyday,...",
+    "coverImage": "/images/poem_pics/poem_pic_20.jpg",
+    "content": "sometimes i envy your face,\nthe smile it gets to hold everyday,\nthe eyes which roll every time i piss you off,\nthe cheeks that turn crimson at the sight of me,\nthe nose which keeps alive a being like you,\nthe hair that turns brown at the strike of sunlight,\nthe forehead which bare my smothers so placidly,\nthe eyebrows that i get to stroke before elevating my fingers down your neck,\nthe lips that give me breath and reincarnate my soul,\nall of this your face gets to hold,\nand i don’t,\nwhich makes me so very malicious, mi amor."
+  },
+  {
+    "id": "monsters",
+    "number": "21",
+    "collection": "reflections & shadows",
+    "title": "monsters",
+    "date": "2025",
+    "tag": "nightfall",
+    "readingTime": "1 min read",
+    "excerpt": "as the day bleeds, it growls, comes crippling to me...",
+    "coverImage": "/images/poem_pics/poem_pic_21.jpg",
+    "content": "as the day bleeds, \nit growls, comes crippling to me. \nas I sit in loneliness,\nit seeks pleasure in voicing fear.\n\nit resides under my bed, \nat times, in my head.\ncalling me out, caging me within my trauma,\nmaking it impossible to mobilize.\n\nat dawn it sleeps, \nduring dusk it preys, cuffing the woeful.\nmonsters that live under our bed,\nimmure us, catching hold of us when we’re weak.\n\nthese monsters that quiver my soul, \nthe bane of my existence.\nI yearn to overcome them, yet as another night passes, they haunt me, \npulling me off the ground, sucking me from within.\n\nwe fight the monsters from our heads, \nyet every dusk, they stay under our beds.\ncrawling to us when we’re most vulnerable,\nmaking these thoughts from us unutterable."
+  },
+  {
+    "id": "my-love",
+    "number": "22",
+    "collection": "love & longing",
+    "title": "my love",
+    "date": "2025",
+    "tag": "forever",
+    "readingTime": "1 min read",
+    "excerpt": "as every night bleeds, i wanna fall into your arms,...",
+    "coverImage": "/images/poem_pics/poem_pic_22.jpg",
+    "content": "as every night bleeds,\nI wanna fall into your arms,\npretend like we don’t live forever. \n\nas every wave collides with the pebbles,\nI wanna kiss your salty lips by the beaming sunset,\nact like we’re lost and found by each other.\n\nas every cloud sobs, \nI wanna hold you close,\nwith you hearing my heart which beats so very hard for you.\n\nmy love"
+  },
+  {
+    "id": "only-fairytales-have-happy-endings",
+    "number": "23",
+    "collection": "heartbreak & memory",
+    "title": "only fairytales have happy endings",
+    "date": "2025",
+    "tag": "illusions",
+    "readingTime": "2 min read",
+    "excerpt": "ah dear, another night...",
+    "coverImage": "/images/poem_pics/poem_pic_23.jpg",
+    "content": "ah dear,\nanother night \ni come online, to see you there harkening to my favorite tunes \n\ni adore our convos\ni adore how we talk about series\ni adore how we talk about songs\ni adore how we share the same music taste \n\na tired day\na tired day filled with tears \na tired day filled with pain \nbut when i see you, my heart finally eases \n\ni always wonder \ni always wonder how beautifully one can express one’s thought in poems\nyet people often misjudge \nthey don’t understand the million memoirs\nthe million broken pieces \nthe million dreamy fancies \nweaved together in these poems \n\ni see other poets \ni wonder how they write so beautifully\nmy heart aches \nmy heart aches to see how people don’t care\nhow people don’t care about my pieces \nout of the 109 only 8 care \nonly 8 care about the feelings\n\nas usual, i set those thoughts aside\ni put my books away \nleaving a hundred incomplete assignments and notes\njust to talk with you\njust to share my interests with you \n\n“only fairytales have happy endings”\nthey say\nbut, hey, let’s prove them wrong\nshow them our love\nour feelings\nour affections \n\na sudden thud i hear\nmy mum wakes me up\n“join the meet”, she says\nand then i realize\ni realize that only fairytales have happy endings"
+  },
+  {
+    "id": "perfect-two",
+    "number": "24",
+    "collection": "love & longing",
+    "title": "perfect two",
+    "date": "2025",
+    "tag": "trust",
+    "readingTime": "3 min read",
+    "excerpt": "compassion, a broken heart, a result of trust, they say...",
+    "coverImage": "/images/poem_pics/poem_pic_24.jpg",
+    "content": "Compassion, a broken heart, \nA result of trust, they say.\nDay and night a thought about, \nThe evening we met in the chilly breeze, \nI looked at you, seeing your misery, \nThe tired worn-out eyes portrayed the inner you,\nWeary yet willing to work, \nEven in the streets filled with snow, \nAnd you really hoped we went slow. \n\nSlow with our moves even now, \nTiny steps we took to make us better. \nMake what we have worth it in the end, \nLeft with memories that we never got a chance to create, \nWhen you’d lay there on that bed thinking of me, \nWhile I’ll be locked in my room crying my heart out. \nWe’d celebrate our tragic love, \nWhile others would complain and criticize, \nThe true feelings we possessed for each other. \n\nThe understanding you had about me, \nHow you picked me up and didn’t keep me down till you were done, \nLike an ever-interesting book you read every page of me, \nAnd didn’t complain about a single part, \nDidn’t fold any of the pages, \nKept reading till you could talk good things about me in your poetry and novels. \n\nWhen I often thought I was unworthy of love, \nThat my flaws overweighed my sweetness, \nYou folded your hand in mine, \nLooked into my tired eyes and said I was perfect. \nThe way you showered all your love on me, \nOften made me think I didn’t deserve you, \nAnd yet you never let me second guess myself. \nThe way you supported all my decisions and always were by my side, \nThe emotions that can’t be expressed by mere words, \nTill date I wish you were mine forever, \nbut as they say all good things come to an end, \nOur perfect tragic book came to an end even before it begin."
+  },
+  {
+    "id": "perfectly-wrong",
+    "number": "25",
+    "collection": "reflections & shadows",
+    "title": "perfectly wrong",
+    "date": "2025",
+    "tag": "overthinking",
+    "readingTime": "2 min read",
+    "excerpt": "you zone out all of a sudden and wonder, wonder if you can pause everything for a moment...",
+    "coverImage": "/images/poem_pics/poem_pic_25.jpg",
+    "content": "you zone out all of a sudden and wonder\nwonder if you can pause everything for a moment \nif you could cover up all your blunder \nif your voice would be a better instrument \n\nyou see at the outside and think\nthink of just how people converse and laugh \nhow they change themselves in a blink \nhow their pals talk on their behalf \n\nif someone could answer your queries \nand teach you to deal with all drawbacks \nand snuggle you when you’re awfully weary \nif they could come in and fill up all your cracks \n\nif you could zone out for the rest of your life \nand never have to face reality \nend up all your strifes \nand handle brutality \n\nif fairytales could come true \nwhere all you’d have to do is sing and snooze\nand find your prince charming out of the blue\nby fitting into those glass shoes \n\nfor all these things to happen we long  \nthough everything goes perfectly wrong"
+  },
+  {
+    "id": "remember-that-night",
+    "number": "26",
+    "collection": "celestial & night",
+    "title": "remember that night",
+    "date": "2025",
+    "tag": "nostalgia",
+    "readingTime": "2 min read",
+    "excerpt": "you came out of that room, with your maroon shirt on,...",
+    "coverImage": "/images/poem_pics/poem_pic_26.jpg",
+    "content": "you came out of that room,\nwith your maroon shirt on,\nwhich slowly ebbed away my midday gloom, \nand that mask which was built upon, \nthose caramel eyes that make you look high,\nall of that made me give away a brief sigh. \n\nwith that beaming smile, \nmessy hair, \nyou sipped the cold brew looking up at me for a while, \nmaking me believe this world is unfair,\ndid everything the way i liked it,\nleaving me wondering if the moment could be more lit.\n\n\ntwas’ 2.30 in the morning,\nwhen i looked over your shoulder,\na couple times, i’ve left you frowning, \nbut that night, i so badly wanted to be sober,\nseeing your pretty face, \nand feeling the sweetness that you couldn’t embrace. \n\nthe face that took my breath away,\nmade me want to talk to you,\nwhen we wanted a few more minutes where we could just stay, \nand you’d hug me under the sky so blue, \nwhen i would hold my sweatshirt tight, \namongst the stars rewritten glistening during the night. \n\n\nwith all this done, \ni’d finally have the guts to say, mi amor,\nand in the garden, we’d run,\nwith sweet ardor,\nsipping a glass of red wine,\nunder the tall trees filled with pines. \n\nyou would make me feel so safe, \naway from the universe, \nand the cold would make you chafe, \nfor warmth, breaking our malady curse, \nwe’d talk without a fight,\nand after a year, i would ask you, \nif you remember that night."
+  },
+  {
+    "id": "stay-a-while",
+    "number": "27",
+    "collection": "love & longing",
+    "title": "stay a while",
+    "date": "2025",
+    "tag": "presence",
+    "readingTime": "2 min read",
+    "excerpt": "she sits there staring, staring at those paintings on the wall...",
+    "coverImage": "/images/poem_pics/poem_pic_27.jpg",
+    "content": "She sits there staring \nStaring at those paintings on the wall \nAll her folks knew she was awfully caring \nHowever, now she was as motionless as a doll \n\nShe didn’t utter a word\nThe room was filled with silence \nEven the chirping of the birds \nCouldn’t break her indolence \n\nThe news sunk in deep \nShe saw her sister on the bed \nOh, how badly she wanted to weep \nYet just slightly stroked her forehead\n\nFrequent visits to the hospital  \nHouse filled with coughing echoes \nDifferent kinds of kettles \nFeeble noises of the sparrows \n\nHer only sister, \nLying on the bed, vulnerable and sick\nShe often went and kissed her \nFrom dusk to dawn, praying to God \nAnd glaring at that pic \n\nThat one pic, \nIn which they were jovial\nIn which they were vigorous\nIn which, as a family, they were delightful \n\nOne day, her sister held her hand \nSaid to her, “I’m not afraid”\nThen crying she fell to the land \nYearning, that one more day she stayed"
+  },
+  {
+    "id": "the-fault-in-our-stars",
+    "number": "28",
+    "collection": "heartbreak & memory",
+    "title": "the fault in our stars",
+    "date": "2025",
+    "tag": "tragedy",
+    "readingTime": "3 min read",
+    "excerpt": "when people ask me, “what is left of him in you?”...",
+    "coverImage": "/images/poem_pics/poem_pic_28.jpg",
+    "content": "When people ask me, \n“What is left of him in you?”\nI can’t show them my blood-stained blouse, \nNeither your fierce fingerprints that are imprinted on my arms,\nNor can I tell them how ill you spoke of me, \nWhen all I said was “No, I’m not in the mood”. \n\nYou thought consent wasn’t made for love, \nYet why do I still have that feeling, \nThe feeling of a kiss left unfinished, \nThat dusk when all I wanted to do was run, \nGo home and lock myself, \nPush your vengeful hands away from me. \n\nYou blamed me for not wanting to make out, \nA street filled with kids and elders, \nWhen I stomped my foot so hard against the ground, \nYou condemned my cause, \nTried pulling me in with you in that dark alley, \nThe alley where love goes to die. \n\nYou drew stars around my scars, \nBut now I’m bleeding, how do you plead?\nYou made me feel like a precious antique, \nUntil that evening when I felt like one of your playing dolls, \nWith which you would play dress up so assiduously, \nYet all I did was play along, not willing but for love. \n\nYou convinced me that our love was incomplete, \nIncomplete without intimacy, \nWhile all along you didn’t love me, \nLove me when I said I was uncomfortable, \nWhen I pushed your blood-stained hands away from me, \nYou thought my love for you was all an act. \n\nThere was an evident fault in our stars, \nManipulation, disrespect, toxicity, \nFilled our sky from its very core, \nAnd now, all that is left of you in me is a murky sky, \nFrom which the stars, clouds and the moon, \nWere so brutally pulled away from me by you."
+  },
+  {
+    "id": "the-greatest-love-story",
+    "number": "29",
+    "collection": "love & longing",
+    "title": "the greatest love story",
+    "date": "2025",
+    "tag": "faith & devotion",
+    "readingTime": "1 min read",
+    "excerpt": "i see the stars glisten in the sky, the moon that lightens our darkest nights,...",
+    "coverImage": "/images/poem_pics/poem_pic_29.jpg",
+    "content": "i see the stars glisten in the sky,\nthe moon that lightens our darkest nights,\nadmist it all resides it’s creator.\n\nthrice it took for peter to deny,\nyet three i love you’s changed the plight,\nshows us that his love was always greater.\n\nhis body, the bread; his blood, the wine,\na remembrance, a reminder,\nof his unwavering love and symbolic sacrifice.\n\nhe said “you are mine”,\nleaving the ninety nine, my hundredth sheep finder,\nfor our sins and pain the price was paid.\n\n“the greatest of all is love” he said,\nthe strongest of all emotions he showed,\ngave himself to be torn and crucified.\n\nfor hereafter the living word i’d spread,\nas my affection for him will overload,\nuntil the day i finally become his bride."
+  },
+  {
+    "id": "the-mystical-moon",
+    "number": "30",
+    "collection": "celestial & night",
+    "title": "the mystical moon",
+    "date": "2025",
+    "tag": "moonlight",
+    "readingTime": "2 min read",
+    "excerpt": "gazing at the sky, i see the moon...",
+    "coverImage": "/images/poem_pics/poem_pic_30.jpg",
+    "content": "gazing at the sky, \ni see the moon \nthe moon, so lonely \nproviding his light to keep the darkness away \nnot only from the city but also from the hearts \nthe hearts filled with anxiety, helplessness, cries.\nthe hearts which are broken, which have no hope,\nthe hearts that are full of fear and fright.\n\nhim, with his picturesque smile\nbrightening lives and pulling people together,\npeople who are meant to be.\nthe pascha full surrounded with stars, \nstars so vague unpunctual, tiny yet massive.\ni wonder what they’d do up there,\nso many in number yet tranquil and still.\nand, he has no one to share,\nhis conundrums and stews.\nthough never says a thing cause’ its his word against theirs.\n\nhe serenely observes everyone \nunderstands what they’re going through cause’ he was there once.\nwhen no one cared, when no one saw, \nand never appreciated his splendor, \nbut now that he’s visible to their eyes,\nthey admire him, they exalt him,\nbecause of that pan am smile he puts on.\n\nhis inside filled with sorrow and melancholy,\nforlorn to see the girls crying for help in the darkness, \nthe boys being told not to sob and lead their families,\nthe kids traumatized by their parents’ scraps,\nthe students jumping off to end their stress.\nhe sees them all from far away, \nyet couldn’t find a way, to make them stay. \n\nthe faint young moon,\nshining bright yet dark inside, \nsurrounded by stars yet a feeling of lonesome,\nseeing the misery yet cannot help,\nwe see ourselves in the moon,\na place where we all have dwelt."
+  },
+  {
+    "id": "the-sky",
+    "number": "31",
+    "collection": "celestial & night",
+    "title": "the sky",
+    "date": "2025",
+    "tag": "the heavens",
+    "readingTime": "3 min read",
+    "excerpt": "i’ve wondered, a few times,...",
+    "coverImage": "/images/poem_pics/poem_pic_31.jpg",
+    "content": "I’ve wondered\na few times, \nwhat the sky would look like to others.\nbecause every time I take a glance at her, \nI get reminded of the days what my life was like \nwhen the sun shined bright, \nnot a single apocalyptic cloud hid her glory, \nthe birds beautifying the sky with its chirp, \nits colours, its beaks and its wings. \nwings flying so high where it cannot see the misery, \nmisery of the doomed earth. \n\nIt’s fascinating how every time I’m joyous, \nshe looks different and the times I’m gloomy, \nshe feels different. \nno matter how bad the weather is, \nshe’s always held herself together, \ntrying not to breakdown. \nholding not only herself tight enough \nbut also, the clouds, the sun, the moon and the stars. \nthe moon and the stars which wouldn’t look as prepossessing,\nif it weren’t complimented by the murky sky. \n\nshe seems like an endless abyss, \nthat is filled with oblivion, \nthat could suck up everything that’s beneath \nand dwelling in her, \nbut she wouldn’t as she’s likely moulded with chastity\nand fondness.\n \nalthough a query I’d always have, \nis she ever judgemental? \nshe sees us all from high above, \nshe sees us suffer, she sees us sin, \nshe sees us cry, she sees us plead.\nyet she never finds a way, \nto be benevolent. \nand we cannot blame her either, \ncause after all we never know if she tired,\ntried to clasp us when we were sobbing, \ntried to be there for us when \neveryone else had given up on us, \ntried to console us and say It’ll all be okay.\n\nbut even then, we wouldn’t appreciate her \nfor what she is, \nfor how she is. \naudacious and picture-pretty. \nher vibrant colours, that shows off her beauty, \nthat whenever you’d look at it, \nyou’d wanna capture it. \nwe admire her for her belle, \nbut never probe the deep ends of her, \nthe sacrifices she’s made. \nto stay still and fight the sudden storm that comes her way."
+  },
+  {
+    "id": "true-love-does-not-endure",
+    "number": "32",
+    "collection": "heartbreak & memory",
+    "title": "true love does not endure",
+    "date": "2025",
+    "tag": "endings",
+    "readingTime": "2 min read",
+    "excerpt": "every night, she laid on her bed noticing him...",
+    "coverImage": "/images/poem_pics/poem_pic_32.jpg",
+    "content": "Every night,\nShe laid on her bed noticing him\nharkening to all of her favourite tunes\nScared to text a hi or even reply\nHid her fond feelings behind those ok’s\n\nA long while she was waiting for a love\nA love, that would make Shakespeare blush\nWith no boundaries or rules\nWhere she could just stare into those ocean eyes\nAnd disregard entity\n\nHadn’t seen him before\nDidn’t know his bare resemblance\n‘This is what love is?’\nShe wondered while looking at the stars\nHoping they’d meet one day and prattle\n\nShe didn’t credit true love\nSaid it was all an illusion\nBut when he spoke to her\nShe questioned her believes\n\nHad a lot of emotions and feelings\nA brew of love and envy\nSleepless nights and dry mornings\nAll she could do,\nWas think of him and his charm\n\nShe ceded her hopes to meet him\nKnew this rife wouldn’t bring them together\nIf only happy endings existed\nShe would see his sweet soul and crimped hair\nPerhaps, she chose to go back to her fantasy\nAs true love never begins"
+  },
+  {
+    "id": "underwater",
+    "number": "33",
+    "collection": "celestial & night",
+    "title": "underwater",
+    "date": "2025",
+    "tag": "deep waters",
+    "readingTime": "1 min read",
+    "excerpt": "standing amidst the deepest waters, my head sunk in far down where all i can see,...",
+    "coverImage": "/images/poem_pics/poem_pic_33.jpg",
+    "content": "Standing amidst the deepest waters, \nMy head sunk in far down where all I can see, \nIs hue of midnight blue shaded across off-white. \n\nSouls that dwell in the tranquillising ocean, \nWhose beauty didn’t scare me a bit, \nFrom sea horses, to fishes with mesmerising scales. \n\nFlora more prepossessing that the ones on land, \nWith leaves and herbs contoured so prudently, \nBrushed with the shades of salmon, lavender and cyan. \n\nThe colossal tail of the daunting whale, \nThe alluring movements of the viscous jellyfish, \nDidn’t seem so bad in contrast to mere mortals. \n\nFloating amongst the beauty of the bay away from the brutal land, \nEased my worn-out heart and worked up mind, \nAnd drew a map for my wandering lost soul."
+  },
+  {
+    "id": "we-could-for-an-attachment",
+    "number": "34",
+    "collection": "reflections & shadows",
+    "title": "we could for an attachment",
+    "date": "2025",
+    "tag": "dreams",
+    "readingTime": "2 min read",
+    "excerpt": "had a hundred dreams and places to visit, yet she couldn’t go, which was explicit...",
+    "coverImage": "/images/poem_pics/poem_pic_34.jpg",
+    "content": "had a hundred dreams and places to visit\nyet she couldn’t go, which was explicit \n\nshe dozed off with those thoughts \nand then found herself in bridgerton \ndancing with the black armoured knight, \nto “we could form an attachment”\nin a huge alcazar, within fireworks and fairy light \na languid whirl with his arms as he brought them in \n\nand then it collapsed \nthey reached the northern lights \na cup of rocky road, one spoon for two\nit made them not lose a sight \nlaying on the grass, gazing at the sky \nwhich ebbed away their midday blues\n\nall at once, the lights fell down \nand they tumbled upon the supertree grove \nat the hours of darkness,\nhow beautifully the coloured lights glowed\nheld each other’s hands and gazed at it \nlater, on their black bicycles they drove\n\nin las vegas they reached\nsat by the withered fountain,\nsnuggled close as they played roulette in the casinos \ntwo glasses of red wine,\nshinning in the reflection of the moon \nwith few roasted jalapenos \n\nat the crack of dawn, sleepy and weary\nadmired the easter islands of chile \ntwo cups of cappuccino,\nviewing the olden pioneers\nas he enfolds his hand in hers \nwhich fades away her sorrow \nthat was awfully sheer \n\nall of it remained a fantasy, \na strong desire to have fun \nand spend some time with her loved one\nshe realized, she slumbered for long \nwoke up and played that song \n“we could form an attachment”"
+  },
+  {
+    "id": "we-ll-be-like-poetry-and-wine",
+    "number": "35",
+    "collection": "celestial & night",
+    "title": "we’ll be like poetry and wine",
+    "date": "2025",
+    "tag": "poetry & wine",
+    "readingTime": "2 min read",
+    "excerpt": "why do you do me like this?, you see me from afar,...",
+    "coverImage": "/images/poem_pics/poem_pic_35.jpg",
+    "content": "Why do you do me like this?\nYou see me from afar,\nDoing things that make me miss, \nWanting me to light those cigars.\n\nMoonlit streets, the paschal which glistens, \nThroughout the night, \nAnd in the sky stars flying with light, \nMaking me miss all my lessons.\n\nSeeing you from afar,\nSmiling and reddening at the sight of you,\nAt the night and throughout the day,\nYou run around my mind even during the midnight dew.\n\nWhen surrounded by mates,\n I seem like a stranger, \nThough when you’re alone, \nYou treat me like Miss Granger. \n\nLike the past two,\nWe’ll end in misery, \nIt took me a month or few, \nTo finally make it history. \n\nSo tell me right now, do you really want me?\nWe’ll be like poetry and wine, \nA magical key, \nTo a world that’d be perfectly fine."
   }
 ];

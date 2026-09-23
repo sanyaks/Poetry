@@ -9,9 +9,14 @@ export function createPoemCard(poem, onSelect) {
   card.setAttribute('role', 'button');
   card.setAttribute('aria-label', `Read poem: ${poem.title}`);
 
-  const coverSrc = poem.coverImage || '/images/botanical_vase_01.jpg';
+  const coverSrc = poem.coverImage || '/images/poem_pics/poem_pic_01.jpg';
   const numBadge = poem.number ? `/${poem.number}` : '/01';
   const collectionLabel = poem.collection || 'unspoken collection';
+  const excerptText = (poem.excerpt && poem.excerpt.trim())
+    ? poem.excerpt.trim()
+    : (poem.content
+        ? poem.content.split('\n').map(l => l.trim()).filter(Boolean).slice(0, 2).join(', ') + '...'
+        : '');
 
   card.innerHTML = `
     <div class="poem-card-image-wrap">
@@ -30,11 +35,10 @@ export function createPoemCard(poem, onSelect) {
     </div>
     <div class="poem-card-body">
       <div class="poem-card-meta">
-        <span class="poem-card-date">${poem.date || ''}</span>
         ${poem.tag ? `<span class="poem-card-tag-pill">${poem.tag}</span>` : ''}
       </div>
       <h3 class="poem-card-title">${poem.title}</h3>
-      <p class="poem-card-excerpt">${poem.excerpt || ''}</p>
+      <p class="poem-card-excerpt">${excerptText}</p>
       <div class="poem-card-footer">
         <span class="read-prompt">
           <span>read poem</span>

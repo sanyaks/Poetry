@@ -4,7 +4,7 @@ import { createPublicationCard } from './PublicationCard.js';
  * PublicationsGrid Component
  * Renders the "my publications" archive section.
  */
-export function createPublicationsGrid(publications) {
+export function createPublicationsGrid(publications, onSelectPublication) {
   const section = document.createElement('section');
   section.className = 'section publications-section';
   section.id = 'publications';
@@ -17,7 +17,7 @@ export function createPublicationsGrid(publications) {
           <span class="section-label">published works</span>
         </div>
         <h2 class="section-title">my publications</h2>
-        <p class="section-subtitle">pieces published in literary reviews, journals, and collections</p>
+        <p class="section-subtitle">featured in national newspapers and literary anthologies</p>
       </div>
 
       <div class="publications-grid" id="publicationsGridContainer"></div>
@@ -27,7 +27,7 @@ export function createPublicationsGrid(publications) {
   const gridContainer = section.querySelector('#publicationsGridContainer');
 
   publications.forEach(pub => {
-    const card = createPublicationCard(pub);
+    const card = createPublicationCard(pub, onSelectPublication);
     gridContainer.appendChild(card);
   });
 
